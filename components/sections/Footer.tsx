@@ -28,13 +28,12 @@ export function Footer() {
                 className="w-6 h-6 rounded-full"
               />
               <span className="text-neutral-400 font-bold text-xl">
-                INTERVIEW CODER
+                EcoPlastic AI
               </span>
             </div>
 
             <div className="text-neutral-500 text-sm">
-              Interview Coder is an undetectable desktop application to help you
-              pass your Leetcode interviews.
+              EcoPlastic is an AI app that rewards for you recylcings.
             </div>
 
             <div className="bg-neutral-900 border border-neutral-800 rounded-full px-4 py-2 flex items-center gap-2 w-fit">
@@ -118,7 +117,7 @@ export function Footer() {
         {/* Bottom Section */}
         <div className="flex flex-col sm:flex-row justify-between items-center mt-12 pt-8 border-t border-neutral-800">
           <p className="text-neutral-500 text-sm mb-4 sm:mb-0">
-            © {new Date().getFullYear()} Interview Coder. All rights reserved.
+            © {new Date().getFullYear()} EcoPlastic. All rights reserved.
           </p>
           <Link href="https://twitter.com/interviewcoder" target="_blank">
             <Image

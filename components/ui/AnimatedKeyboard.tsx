@@ -1,6 +1,8 @@
 import styles from "@/styles/Keyboard.module.css"
 import { useEffect, useState } from "react"
 
+const glowingKeys = ["E", "C", "O", "P", "L", "A", "S", "T", "I", "C"];
+
 const KeyboardKey = ({
   children,
   isGlowing = false,
@@ -89,6 +91,20 @@ export const AnimatedKeyboard = () => {
               "[",
               "]",
               "\\"
+
+              ,"Q",
+              "W",
+              "E",
+              "R",
+              "T",
+              "Y",
+              "U",
+              "I",
+              "O",
+              "P",
+              "[",
+              "]",
+              "\\"
             ].map((key) => (
               <KeyboardKey key={key}>
                 <span className={styles.primary}>{key}</span>
@@ -97,9 +113,9 @@ export const AnimatedKeyboard = () => {
           </KeyboardRow>
 
           <KeyboardRow>
-            {["A", "S", "D", "F", "G", "H", "J", "K", "L", ";", "'"].map(
+            {[ "E", "C", "O", "P", "L", "A", "S", "T", "I", "C"].map(
               (key) => (
-                <KeyboardKey key={key}>
+                <KeyboardKey key={key} isGlowing={glowingKeys.includes(key)}>
                   <span className={styles.primary}>{key}</span>
                 </KeyboardKey>
               )
@@ -108,7 +124,7 @@ export const AnimatedKeyboard = () => {
 
           <KeyboardRow>
             {["Z", "X", "C", "V", "B", "N", "M", ",", ".", "/"].map((key) => (
-              <KeyboardKey key={key} isGlowing={key === "B"}>
+              <KeyboardKey key={key} >
                 <span className={styles.primary}>{key}</span>
               </KeyboardKey>
             ))}
@@ -127,7 +143,7 @@ export const AnimatedKeyboard = () => {
                 <span className={styles.icon}>⌥</span>
               </div>
             </KeyboardKey>
-            <KeyboardKey isModifier isGlowing>
+            <KeyboardKey isModifier >
               <div className={styles.commandKey}>
                 <span>command</span>
                 <span className={styles.icon}>⌘</span>

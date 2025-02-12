@@ -15,44 +15,54 @@ import {
 const words = ["kill Leetcode", "fix Technical", "change Coding"]
 const faqs = [
   {
-    question: "Is Interview Coder free?",
+    question: "Is EcoPlastic AI free?",
     answer:
-      "No, it's $20 a month. In exchange, you get access to the absolute latest models, including o1, Claude, and Deepseek."
+      "Yes it is free to use! Launching on the Google Play Store Soon"
   },
   {
-    question: "How is it undetectable?",
+    question: "How does the app work?",
     answer: `
       <div>
-        Our software is designed to be completely undetectable to interviewers:
+        Ecoplastic uses machine learning to identify recyclable items through your phone's camera. 
+        Here's how it works:
         <ul class="list-none space-y-2 mt-2">
-          <li>• Invisible to Zoom (≤6.16) and any browser-based screen recording software</li>
-          <li>• Undetectable global keyboard commands that can't be detected as input by the browser</li>
-          <li>• Thoughts to read aloud that sound human and can explain your process</li>
-          <li>• Moveable screen using cmd + arrow keys so your eyes aren't looking away from the solution as you write your code.</li>
+          <li>• Scan plastic bottles, furniture, and paper using the camera.</li>
+          <li>• The app identifies whether the item is recyclable and rewards points for eligible items.</li>
+          <li>• Redeem points for eco-friendly items or services, like waste collection tools or tree planting.</li>
         </ul>
-        <div class="mt-4">
-          <a target="_blank" href="https://www.linkedin.com/posts/neel-shanmugam_technical-interviews-for-software-engineering-activity-7275781351046299648-tCRy?utm_source=share&utm_medium=member_desktop">
-            <span class="underline">Here</span>'s a demo.
-          </a>
-        </div>
-        </div>
       </div>
     `
   },
   {
-    question: "Is it suitable for all skill levels?",
-    answer: "Yes."
+    question: "Is it suitable for all age groups?",
+    answer: "Yes. The app is designed to be simple and user-friendly, making it suitable for all age groups."
   },
   {
-    question: "What programming languages are supported?",
-    answer:
-      "Python, Golang, Java, and Javascript. You can edit your preferred langauge in the app or in your settings."
+    question: "How do I earn rewards?",
+    answer: `
+      <div>
+        You earn rewards by scanning recyclable items. Each successful scan adds points to your balance, 
+        which you can redeem for eco-friendly tools, discounts, or services like tree planting.
+      </div>
+    `
   },
-  ,
   {
-    question: "I'm experiencing a bug, what should I do",
-    answer:
-      "9 times out of 10, you can uninstall and reinstall the app from this website. If that doesn't work, please email us at <a href='mailto:churlee12@gmail.com'>churlee12@gmail.com</a> and we'll get back to you within 24 hours."
+    question: "What should I do if I experience a bug?",
+    answer: `
+      <div>
+        Most issues can be resolved by reinstalling the app. If the problem persists, 
+        please email us at <a href='mailto:devkatyal01@gmail.com'>devkatyal01@gmail.com</a>, and we’ll respond within 24 hours.
+      </div>
+    `
+  },
+  {
+    question: "Is my data secure?",
+    answer: `
+      <div>
+        Yes. We prioritize user privacy and data security. 
+        All data is stored securely and used only to enhance your experience with the app.
+      </div>
+    `
   }
 ]
 
@@ -135,7 +145,7 @@ export function FaqSection() {
             <span className="white-gradient font-inter">Common Questions</span>
           </h2>
           <p className="text-neutral-400 max-w-2xl mx-auto">
-            Everything you need to know about Interview Coder.
+            Everything you need to know about EcoPlastic AI
           </p>
         </div>
 
@@ -164,10 +174,10 @@ export function FaqSection() {
           <div className="">
             <div className="space-y-4">
               <h2 className="text-4xl font-bold tracking-tight">
-                Take the short way.
+                Save the Planet.
               </h2>
               <p className="text-neutral-400">
-                Download and use Interview Coder today.
+                Download and use EcoPlastic AI today.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-6">
@@ -189,7 +199,7 @@ export function FaqSection() {
                 <DropdownMenuContent>
                   <DropdownMenuItem>
                     <Link
-                      href="https://github.com/ibttf/interview-coder/releases/download/v1.0.8/Interview-Coder-arm64.dmg"
+                      href="https://github.com/dkaty123/EcoPlastic"
                       className="w-full"
                     >
                       Download for Mac (Apple Silicon)
@@ -197,7 +207,7 @@ export function FaqSection() {
                   </DropdownMenuItem>
                   <DropdownMenuItem>
                     <Link
-                      href="https://github.com/ibttf/interview-coder/releases/download/v1.0.8/Interview-Coder-x64.dmg"
+                      href="https://github.com/dkaty123/EcoPlastic"
                       className="w-full"
                     >
                       Download for Mac (Intel)
@@ -217,7 +227,7 @@ export function FaqSection() {
                     height={16}
                     className="w-4 h-4"
                   />
-                  Join Windows waitlist
+                  Download for Windows
                 </Link>
               </Button>
             </div>

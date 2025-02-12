@@ -12,29 +12,28 @@ const DebugView = () => {
             {/* Thoughts Section */}
             <div className="space-y-2">
               <h3 className="text-sm font-medium text-white/90">
-                What I Changed (Read these aloud)
+                The following code is a quick AI snippet
               </h3>
               <div className="space-y-3">
                 <div className="space-y-1 text-white/80 text-sm">
                   <div className="flex items-start gap-2">
                     <div className="w-1 h-1 rounded-full bg-blue-400/80 mt-2 shrink-0" />
                     <div>
-                      The current solution uses nested loops, resulting in O(n²)
-                      time complexity.
+                      The code uses an image recognition algorthim to detect plastic
+                    
                     </div>
                   </div>
                   <div className="flex items-start gap-2">
                     <div className="w-1 h-1 rounded-full bg-blue-400/80 mt-2 shrink-0" />
                     <div>
-                      We can optimize this by using a hash map to store
-                      previously seen numbers.
+                     It uses a machine learning framework called TensorFlow Lite, which is optimized for mobile devices
+              
                     </div>
                   </div>
                   <div className="flex items-start gap-2">
                     <div className="w-1 h-1 rounded-full bg-blue-400/80 mt-2 shrink-0" />
                     <div>
-                      This reduces time complexity to O(n) with O(n) space
-                      trade-off.
+                      From plastic water bottles, to soda cans, to plastic bags, the code can detect a variety of plastic objects
                     </div>
                   </div>
                 </div>
@@ -59,30 +58,48 @@ const DebugView = () => {
                   wrapLines={true}
                   wrapLongLines={true}
                 >
-                  {`def twoSum(nums: List[int], target: int) -> List[int]:
-    seen = {}  # Value -> Index mapping
-    for i, num in enumerate(nums):
-        complement = target - num
-        if complement in seen:
-            return [seen[complement], i]
-        seen[num] = i
-    return []  # No solution found`}
+                  {`import tensorflow as tf
+import numpy as np
+
+# Data: Plastic recycled (X) vs CO2 reduced (Y)
+X = np.array([5, 10, 15, 20, 25], dtype=float)  # Tons of plastic recycled
+Y = np.array([50, 100, 150, 200, 250], dtype=float)  # CO2 reduced in kg
+
+# Define a simple model
+model = tf.keras.Sequential([
+    tf.keras.layers.Dense(units=1, input_shape=[1])  # One input, one output
+])
+
+# Compile and train the model
+model.compile(optimizer='adam', loss='mean_squared_error')
+model.fit(X, Y, epochs=100, verbose=0)
+
+# Convert the model to TensorFlow Lite format
+converter = tf.lite.TFLiteConverter.from_keras_model(model)
+tflite_model = converter.convert()
+
+# Save the TFLite model to a file
+with open('eco_plastic_model.tflite', 'wb') as f:
+    f.write(tflite_model)
+
+print("Model converted to TFLite and saved.")
+`}
                 </SyntaxHighlighter>
               </div>
             </div>
 
             {/* Complexity Analysis */}
             <div className="space-y-2">
-              <h3 className="text-sm font-medium text-white/90">Complexity</h3>
+              <h3 className="text-sm font-medium text-white/90">The Impact</h3>
               <div className="space-y-3">
                 <div className="space-y-1 text-white/80 text-sm">
                   <div className="flex items-start gap-2">
                     <div className="w-1 h-1 rounded-full bg-blue-400/80 mt-2 shrink-0" />
-                    <div>Time Complexity: O(n)</div>
+                    <div>Using this ML model, EcoPlastic can help prevent plastic pollution</div>
                   </div>
                   <div className="flex items-start gap-2">
                     <div className="w-1 h-1 rounded-full bg-blue-400/80 mt-2 shrink-0" />
-                    <div>Space Complexity: O(n)</div>
+                    <div>The scope goes beyond Canada, but extends to the entire world</div>
                   </div>
                 </div>
               </div>
