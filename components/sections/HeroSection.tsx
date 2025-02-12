@@ -82,18 +82,6 @@ export const HeroSection = () => {
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
-          <Button variant="highlight" className="w-full sm:w-auto px-6 py-2">
-            <Link href="/waitlist" className="flex items-center gap-2">
-              <Image
-                src="/windows.svg"
-                alt="Windows"
-                width={16}
-                height={16}
-                className="w-5 h-5"
-              />
-              Windows Waitlist
-            </Link>
-          </Button>
         </motion.div>
 
         <motion.div

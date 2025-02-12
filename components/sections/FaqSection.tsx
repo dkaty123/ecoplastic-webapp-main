@@ -202,34 +202,13 @@ export function FaqSection() {
                       href="https://github.com/dkaty123/EcoPlastic"
                       className="w-full"
                     >
-                      Download for Mac (Apple Silicon)
+                     View on Github
                     </Link>
                   </DropdownMenuItem>
-                  <DropdownMenuItem>
-                    <Link
-                      href="https://github.com/dkaty123/EcoPlastic"
-                      className="w-full"
-                    >
-                      Download for Mac (Intel)
-                    </Link>
-                  </DropdownMenuItem>
+                  
                 </DropdownMenuContent>
               </DropdownMenu>
-              <Button
-                variant="outline"
-                className="gap-2 text-sm font-medium h-10 w-[280px] md:w-[320px] border-neutral-700 hover:bg-neutral-800"
-              >
-                <Link href="/waitlist" className="flex items-center gap-2">
-                  <Image
-                    src="/windows.svg"
-                    alt="Windows"
-                    width={16}
-                    height={16}
-                    className="w-4 h-4"
-                  />
-                  Download for Windows
-                </Link>
-              </Button>
+             
             </div>
           </div>
         </div>

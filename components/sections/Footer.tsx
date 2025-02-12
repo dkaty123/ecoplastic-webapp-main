@@ -48,70 +48,10 @@ export function Footer() {
           </div>
 
           {/* Middle Column - Support */}
-          <div className="md:col-span-4 flex flex-col gap-4">
-            <h3 className="text-neutral-400 font-semibold">Support</h3>
-            <div className="flex flex-col gap-2">
-              <Link
-                href="/contact"
-                className="text-neutral-500 hover:text-neutral-300 text-sm"
-              >
-                Contact Us
-              </Link>
-              <Link
-                href="/policies"
-                className="text-neutral-500 hover:text-neutral-300 text-sm"
-              >
-                Refund Policy
-              </Link>
-              <Link
-                href="/policies"
-                className="text-neutral-500 hover:text-neutral-300 text-sm"
-              >
-                Cancellation Policy
-              </Link>
-            </div>
-          </div>
+          
 
           {/* Right Column - Download */}
-          <div className="md:col-span-4 flex flex-col gap-4">
-            <h3 className="text-neutral-400 font-semibold">Download</h3>
-            <div className="flex flex-col gap-4">
-              <DropdownMenu>
-                <DropdownMenuTrigger asChild>
-                  <Button className="text-black gap-2 text-sm font-medium h-10 bg-primary hover:bg-primary/90 w-fit">
-                    <div className="flex items-center gap-2">
-                      <Image
-                        src="/apple.svg"
-                        alt="Apple"
-                        width={16}
-                        height={16}
-                        className="w-4 h-4"
-                      />
-                      Download
-                    </div>
-                  </Button>
-                </DropdownMenuTrigger>
-                <DropdownMenuContent>
-                  <DropdownMenuItem>
-                    <Link
-                      href="https://github.com/ibttf/interview-coder/releases/download/v1.0.8/Interview-Coder-arm64.dmg"
-                      className="w-full"
-                    >
-                      Download for Mac (Apple Silicon)
-                    </Link>
-                  </DropdownMenuItem>
-                  <DropdownMenuItem>
-                    <Link
-                      href="https://github.com/ibttf/interview-coder/releases/download/v1.0.8/Interview-Coder-x64.dmg"
-                      className="w-full"
-                    >
-                      Download for Mac (Intel)
-                    </Link>
-                  </DropdownMenuItem>
-                </DropdownMenuContent>
-              </DropdownMenu>
-            </div>
-          </div>
+          
         </div>
 
         {/* Bottom Section */}

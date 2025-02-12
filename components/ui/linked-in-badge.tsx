@@ -5,7 +5,7 @@ export function LinkedinBadge() {
   return (
     <div className="lg:pt-0 pt-24">
       <Link
-        href="https://www.linkedin.com/feed/update/urn:li:activity:7288387174708699136/"
+        href="https://www.instagram.com/ecoplasticapp/?next=%2F"
         target="_blank"
         className="relative hover:opacity-90 transition-all items-center flex gap-4 px-8 py-2 rounded-xl bg-primary/10 text-primary mb-12 border border-primary/40 w-fit mx-auto"
         style={{
@@ -24,7 +24,7 @@ export function LinkedinBadge() {
         </div>
         <div className="flex-col flex text-start h-fit">
           <span className="text-[8px] md:text-[10px] font-extrabold text-primary/90">
-            LINKEDIN
+            Instagram
           </span>
           <span
             className="text-lg md:text-xl font-bold text-primary"
