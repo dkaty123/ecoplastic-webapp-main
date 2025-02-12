@@ -1,7 +1,3 @@
-"use client"
-
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter"
-import { oneDark } from "react-syntax-highlighter/dist/esm/styles/prism"
 import { useEffect, useState } from "react"
 
 const SolutionsView = () => {
@@ -51,6 +47,18 @@ const SolutionsView = () => {
         >
           <div className="rounded-lg overflow-hidden">
             <div className="px-4 py-3 space-y-4">
+              {/* Video Section */}
+              <div className="mb-4">
+                <video
+                  className="w-full rounded-lg"
+                  controls
+                 
+                  src="/videos/temps.mp4"
+                >
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+
               {state === "extracting" || state === "problem" ? (
                 <div className="space-y-2">
                   <h2 className="text-[13px] font-medium text-white tracking-wide">
@@ -68,13 +76,6 @@ const SolutionsView = () => {
                         Given an array of integers nums and an integer target,
                         return indices of the two numbers such that they add up
                         to target.
-                        <br />
-                        <br />
-                        You may assume that each input would have exactly one
-                        solution, and you may not use the same element twice.
-                        <br />
-                        <br />
-                        You can return the answer in any order.
                       </div>
                       <div className="mt-4 flex">
                         <p className="text-xs bg-gradient-to-r from-gray-300 via-gray-100 to-gray-300 bg-clip-text text-transparent animate-pulse">
@@ -100,19 +101,6 @@ const SolutionsView = () => {
                             value.
                           </div>
                         </div>
-                        <div className="flex items-start gap-2">
-                          <div className="w-1 h-1 rounded-full bg-blue-400/80 mt-2 shrink-0" />
-                          <div>
-                            We can use a hash map to store numbers we've seen.
-                          </div>
-                        </div>
-                        <div className="flex items-start gap-2">
-                          <div className="w-1 h-1 rounded-full bg-blue-400/80 mt-2 shrink-0" />
-                          <div>
-                            For each number, check if its complement exists in
-                            the map.
-                          </div>
-                        </div>
                       </div>
                     </div>
                   </div>
@@ -123,20 +111,7 @@ const SolutionsView = () => {
                       Solution
                     </h3>
                     <div className="bg-[#1E1E1E] rounded-lg overflow-hidden">
-                      <SyntaxHighlighter
-                        language="python"
-                        style={oneDark}
-                        customStyle={{
-                          background: "transparent",
-                          padding: "16px",
-                          margin: 0,
-                          borderRadius: 0,
-                          fontSize: "12px"
-                        }}
-                        showLineNumbers={true}
-                        wrapLines={true}
-                        wrapLongLines={true}
-                      >
+                      <pre className="p-4 text-xs text-white">
                         {`def twoSum(nums: List[int], target: int) -> List[int]:
     seen = {}  # Value -> Index mapping
     for i, num in enumerate(nums):
@@ -145,7 +120,7 @@ const SolutionsView = () => {
             return [seen[complement], i]
         seen[num] = i
     return []  # No solution found`}
-                      </SyntaxHighlighter>
+                      </pre>
                     </div>
                   </div>
 
@@ -169,6 +144,7 @@ const SolutionsView = () => {
                   </div>
                 </>
               )}
+
             </div>
           </div>
         </div>

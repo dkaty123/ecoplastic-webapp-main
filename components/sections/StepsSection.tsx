@@ -28,11 +28,11 @@ const steps = [
       "Click the scan page to take a picture of a plastic item. Max 1 scan will be saved per 24 hours."
   },
   {
-    id: "solutions",
-    subtitle: "Solve",
-    title: "Get your solutions",
+    id: "Rewards",
+    subtitle: "Rewards",
+    title: "Get Rewarded!",
     description:
-      "Once you've captured your screenshots, press ⌘ + ↵ to generate solutions. We'll analyze the problem and provide a solution with detailed explanations."
+      "Once you've scanned enough plastic items, browse through an awesome catalog of prizes!"
   },
   {
     id: "debug",
