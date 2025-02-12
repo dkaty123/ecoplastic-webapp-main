@@ -53,7 +53,7 @@ const SolutionsView = () => {
                   className="w-full rounded-lg"
                   controls
                  
-                  src="/videos/temps.mp4"
+                  src="/videos/tempsss.mp4"
                 >
                   Your browser does not support the video tag.
                 </video>

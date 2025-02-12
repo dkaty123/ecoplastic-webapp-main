@@ -35,11 +35,11 @@ const steps = [
       "Once you've scanned enough plastic items, browse through an awesome catalog of prizes!"
   },
   {
-    id: "debug",
-    subtitle: "Debug and Optimize",
-    title: "Debug your solutions",
+    id: "Machine Learning",
+    subtitle: "Machine Learning",
+    title: "Machine Learning Power",
     description:
-      "If the solutions are incorrect or you need an optimization, take extra screenshots of your code with ⌘ + H. Press ⌘ + ↵ again and we'll debug and optimize your code, with before and after comparisons."
+      "Here is a quick code sample that shows how EcoPlastic uses AI image classifcation to identify 100s of plastic items with 97% accuracy"
   }
 ]
 
