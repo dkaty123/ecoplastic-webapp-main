@@ -18,7 +18,8 @@ const eslintConfig = [
       "react/no-unescaped-entities": "off",
       "react-hooks/exhaustive-deps": "off"
     },
-    ignores: ["**/temp.js", "config/*"]
+    ignores: ["node_modules/**", ".next/**", "dist/**", "public/**"]
+    
   }
 ]
 
