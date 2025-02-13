@@ -77,7 +77,7 @@ export const HeroSection = () => {
                   href="https://github.com/dkaty123/EcoPlastic"
                   className="w-full"
                 >
-                  Download for Mac (Intel)
+                 View on Github
                 </Link>
               </DropdownMenuItem>
             </DropdownMenuContent>

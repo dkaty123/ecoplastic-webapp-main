@@ -192,7 +192,7 @@ export function FaqSection() {
                         height={16}
                         className="w-4 h-4"
                       />
-                      Download for Mac
+                      View on Githib
                     </div>
                   </Button>
                 </DropdownMenuTrigger>
