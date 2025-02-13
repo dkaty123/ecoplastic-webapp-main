@@ -22,7 +22,7 @@ const steps = [
   },
   {
     id: "interview",
-    subtitle: "Win Awesome Rewards",
+    subtitle: "AI Scanner",
     title: "Start scanning today",
     description:
       "Click the scan page to take a picture of a plastic item. Max 1 scan will be saved per 24 hours."
