@@ -32,7 +32,7 @@ export function LinkedinBadge() {
               textShadow: "0 0 10px hsl(60 100% 50% / 0.5)"
             }}
           >
-            100k Impressions
+            10k Impressions
           </span>
         </div>
       </Link>
