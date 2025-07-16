@@ -15,16 +15,16 @@ export function LinkedinBadge() {
         <div className="absolute -inset-0.5 bg-primary/20 rounded-xl blur-[8px] -z-10" />
         <div>
           <Image
-            alt="Linkedin Badge"
-            src="/linked-in.svg"
-            width="10"
-            height="10"
+            alt="uwaterloo"
+            src="/uwaterloo.png"
+            width="80"
+            height="80"
             className="w-6 h-6 md:w-8 md:h-8"
           />
         </div>
         <div className="flex-col flex text-start h-fit">
           <span className="text-[8px] md:text-[10px] font-extrabold text-primary/90">
-            Instagram
+            UWaterloo WUSA Change Engine Compeition
           </span>
           <span
             className="text-lg md:text-xl font-bold text-primary"
@@ -32,7 +32,7 @@ export function LinkedinBadge() {
               textShadow: "0 0 10px hsl(60 100% 50% / 0.5)"
             }}
           >
-            10k Impressions
+            1st place $3000 Winner 
           </span>
         </div>
       </Link>
