@@ -1,3 +1,5 @@
+EcoPlastic - Smart Recycling App
+         
          ## Live at https://ecoplastic.netlify.app/
  
 
